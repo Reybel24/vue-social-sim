@@ -19,47 +19,70 @@ export default {
         {
           postID: 0,
           username: "jimbo04",
-          avatar: '009-summer',
+          avatar: "009-summer",
           postContent: "Hello world! What a wonderful day!",
           likes: 7,
           comments: 2,
-          timestamp: 'A few seconds ago'
+          timestamp: "A few seconds ago"
         },
         {
           postID: 1,
           username: "jack_green",
-          avatar: '041-tourist',
+          avatar: "041-tourist",
           postContent: "Never knew tomatoes were a fruit.",
           likes: 19,
           comments: 5,
-          timestamp: 'A few minutes ago'
+          timestamp: "A few minutes ago"
         },
         {
           postID: 2,
           username: "QueenBeeXY",
-          avatar: '038-tourist',
+          avatar: "038-tourist",
           postContent: "Check out this photo I took on my trip last week!",
           likes: 58,
           comments: 0,
-          timestamp: '7 minutes ago'
+          timestamp: "7 minutes ago",
+          images: [
+            "trip-image-1"
+          ],
+          hashtags: [
+            "goodnight",
+            "sky",
+            "EndLightPollution",
+            "milkyway"
+          ],
         },
         {
           postID: 3,
           username: "thomas_dankengine",
-          avatar: '004-businessman',
+          avatar: "004-businessman",
           postContent: "so it looks like i've managed to fill over 100gb of space on my phone with memes alone...I wonder if I have an addiction. On second thought, I don't have enough memes tbh. Memes are love, memes are life.",
           likes: 58,
           comments: 0,
-          timestamp: '53 minutes ago'
+          timestamp: "53 minutes ago"
         },
         {
           postID: 4,
           username: "spartacus",
-          avatar: '014-explorer',
+          avatar: "014-explorer",
           postContent: "Don't forget to exercise atleast once an hour to stay in shape!",
+          hashtags: [
+            "gyming",
+            "gettingstrong",
+            "bench",
+            "TillICollapse",
+            "gyming",
+            "gettingstrong",
+            "bench",
+            "TillICollapse",
+            "gyming",
+            "gettingstrong",
+            "bench",
+            "TillICollapse",
+          ],
           likes: 58,
           comments: 0,
-          timestamp: '2 hours ago'
+          timestamp: "2 hours ago"
         }
       ]
     };
@@ -69,7 +92,7 @@ export default {
 
 <style scoped>
 .wrapper {
-  width: 750px;
+  width: 700px;
   display: flex;
   flex-wrap: wrap;
   padding: 50px 5px 10px 5px;
