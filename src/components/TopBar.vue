@@ -1,13 +1,11 @@
 <template>
-  <div class="wrapper">
-
-  </div>
+  <div class="wrapper"></div>
 </template>
 
 <script>
 export default {
-  name: 'TopBar',
-}
+  name: "TopBar",
+};
 </script>
 
 <style scoped>
@@ -16,5 +14,4 @@ export default {
   height: 60px;
   background-color: grey;
 }
-
 </style>

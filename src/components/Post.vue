@@ -62,14 +62,14 @@ export default {
     },
     // Returns true if this post contains user-posted images
     hasImages() {
-      if ("images" in this.postData) {
+      if (this.postData.images != null && this.postData.images.length > 0) {
         return true;
       } else {
         return false;
       }
     },
     hasHashtags() {
-      if ("hashtags" in this.postData) {
+      if (this.postData.hashtags != null && this.postData.hashtags.length > 0) {
         return true;
       } else {
         return false;
