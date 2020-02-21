@@ -49,5 +49,8 @@ body {
 .text.bold {
   font-weight: 700;
 }
+.text.grey {
+  color: rgb(182, 182, 182);
+}
 
 </style>
