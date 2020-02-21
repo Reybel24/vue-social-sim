@@ -2,14 +2,14 @@
   <div class="post box-shadow">
     <div class="section-user">
       <div class="user-img"></div>
-      <div class="user-name">{{ this.user.username }}</div>
+      <div class="user-name">{{ this.postData.username }}</div>
     </div>
     <div class="section-content">
-      <div class="text">{{ this.user.postContent }}</div>
+      <div class="text">{{ this.postData.postContent }}</div>
     </div>
     <div class="section-actions">
-      <div class="action">Like</div>
-      <div class="action">Comment</div>
+      <font-awesome-icon icon="heart" class="action"/>
+      <font-awesome-icon icon="comment" class="action"/>
     </div>
   </div>
 </template>
@@ -17,15 +17,14 @@
 <script>
 export default {
   name: "Post",
+  props: {
+    postData: {
+      type: Object,
+      default: null
+    }
+  },
   data() {
-    return {
-      user: {
-        username: "jimbo04",
-        postContent: "Hello world! What a wonderful day!",
-        likes: 7,
-        comments: 2
-      }
-    };
+    return {};
   }
 };
 </script>
@@ -68,7 +67,7 @@ export default {
 /* Post content */
 .section-content {
   width: 100%;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 11px 7px 11px;
   text-align: left;
 }
 .section-content > .text {
@@ -76,18 +75,26 @@ export default {
   color: grey;
   padding: 0px 0px 0px 5px;
   display: inline-flex;
+  line-height: 24px;
 }
 
 /* Actions */
 .section-actions {
   width: 100%;
-  padding: 5px 5px 18px 5px;
+  padding: 10px 5px 5px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .section-actions > .action {
+  font-size: 20px;
   display: inline-flex;
-  background-color: blue;
+  color: rgb(218, 218, 218);
+  margin-right: 10px;
+  transition: 0.15s;
+}
+.section-actions > .action:hover {
+  color: rgb(221, 104, 104);
+  cursor: pointer;
 }
 </style>

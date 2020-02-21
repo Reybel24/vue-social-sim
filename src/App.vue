@@ -19,6 +19,9 @@ export default {
 </script>
 
 <style>
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap');
+
 body {
   margin: 0;
 }
@@ -36,6 +39,15 @@ body {
 /* Common styles */
 .box-shadow {
   box-shadow: 0px 5px 18px 0px rgba(79,79,79,0.04);
+}
+
+/* Text styles */
+.text {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+}
+.text.bold {
+  font-weight: 700;
 }
 
 </style>
