@@ -13,6 +13,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+// Moments
+// import moment from 'moment'
+// Vue.use(moment);
+
 
 new Vue({
   render: h => h(App),

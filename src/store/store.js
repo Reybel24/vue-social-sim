@@ -23,7 +23,27 @@ export const store = new Vuex.Store({
         }
 
         axios(options).then(response => {
-          resolve(response.data);
+          resolve(response.data.reverse());
+        })
+      })
+    },
+    fetchPostsNew: ({ context }, payload) => {
+      return new Promise((resolve) => {
+        console.log(context)
+        console.log(payload)
+        // Options
+        const options = {
+          url: "http://localhost:5000/posts/new",
+          methods: "GET",
+          headers: { "content-type": "application/json" },
+          params: {
+            "timestamp": payload.timestamp
+          },
+        }
+
+        axios(options).then(response => {
+          console.log(response.data);
+          resolve(response.data.reverse());
         })
       })
     },
