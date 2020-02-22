@@ -89,6 +89,11 @@ export default {
   display: flex;
   flex-wrap: wrap;
   border-radius: 5px;
+  transition: .25s;
+}
+
+.post:hover {
+  box-shadow: 0px 5px 18px 0px rgba(79,79,79,0.1);
 }
 
 /* User */
@@ -169,7 +174,7 @@ export default {
   padding: 0px 0px 0px 0px;
   text-align: center;
   overflow: hidden;
-  max-height: 500px;
+  max-height: 950px;
   background-size: cover;
   margin-bottom: 17px;
 }
@@ -177,7 +182,7 @@ export default {
   width: 100%;
   padding: 0px 0px 0px 0px;
   overflow: hidden;
-  transform: translate(0, -50%);
+  
 }
 
 /* About */

@@ -10,8 +10,10 @@ export default {
 
 <style scoped>
 .wrapper {
-  width: 100%;
-  height: 60px;
-  background-color: grey;
+  width: 19%;
+  height: vh;
+  background-color: #f7f7f7;
+  display: flex;
+  box-shadow: 0px 5px 18px 0px rgba(79,79,79,0.07);
 }
 </style>

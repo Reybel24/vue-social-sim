@@ -40,8 +40,7 @@ export default {
   width: 700px;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px 5px 10px 5px;
-  margin: 0 auto;
+  padding: 50px 5px 10px 75px;
   margin-top: 0px;
 }
 </style>
