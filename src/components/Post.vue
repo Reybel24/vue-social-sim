@@ -16,7 +16,7 @@
 
     <!-- Posted text -->
     <div class="section-content-text">
-      <div class="text">{{ this.postData.postContent }}</div>
+      <div class="text">{{ this.postData.content }}</div>
     </div>
 
     <!-- Hashtags -->
@@ -56,9 +56,8 @@ export default {
       return require("@/assets/avatars/" + this.postData.avatar + ".png");
     },
     getImage(index) {
-      return require("@/assets/posts/images/" +
-        this.postData.images[index] +
-        ".jpg");
+      return require("@/assets/" +
+        this.postData.images[index]);
     },
     // Returns true if this post contains user-posted images
     hasImages() {

@@ -37,6 +37,7 @@ export default {
   methods: {
     fetchtPosts() {
       this.$store.dispatch("fetchPosts").then(response => {
+        // console.log(response)
         this.posts = response;
 
         // Done fetching posts, show them
@@ -49,7 +50,7 @@ export default {
       // Add new posts to posts array
       this.newPosts.map(post => {
         console.log(post)
-        this.posts.push(post);
+        this.posts.unshift(post);
       });
 
       this.count_newPosts = 0;
@@ -61,10 +62,11 @@ export default {
       this.$store
         .dispatch("fetchPostsNew", { timestamp: this.timestamp_lastUpdate })
         .then(response => {
+          console.log(response)
           this.newPosts = response;
-          if ((this.newPosts.length - 1) > 0) {
+          if ((this.newPosts.length) > 0) {
             console.log("There are new posts available.");
-            this.count_newPosts = this.newPosts.length - 1;
+            this.count_newPosts = this.newPosts.length;
           } else {
             console.log("No new posts.");
           }
